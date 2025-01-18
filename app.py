@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 from dash import Dash, dcc, html, Input, Output
 import pandas as pd
 import plotly.express as px
@@ -37,7 +31,7 @@ def update_chart(selected_column):
     fig = px.bar(df, x="Category", y=selected_column, title=f"{selected_column} Bar Chart")
     return fig
 
-# Run the app
+# Local testing only
 if __name__ == "__main__":
     app.run_server(debug=True)
 
