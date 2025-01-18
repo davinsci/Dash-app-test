@@ -8,7 +8,7 @@ df = pd.DataFrame({
 })
 
 app = Dash(__name__)
-# server = app.server  # Expose the Flask server
+server = app.server  # Expose the Flask server
 
 app.layout = html.Div([
     html.H1("Simple Dash App"),
