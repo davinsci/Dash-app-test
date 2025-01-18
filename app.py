@@ -31,6 +31,7 @@ df = pd.DataFrame(data)
 
 # Initialize the Dash app
 app = Dash(__name__)
+server = app.server  # Expose the Flask server
 
 # External stylesheets (optional, for better aesthetics)
 app.css.config.serve_locally = False
