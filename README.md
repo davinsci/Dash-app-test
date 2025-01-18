@@ -1,1 +1,1 @@
-pip freeze > requirements.txt
+This is just a friggin basic test.
